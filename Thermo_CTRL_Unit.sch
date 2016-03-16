@@ -1,0 +1,373 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:BK_Common
+LIBS:BK_LED_Drivers
+LIBS:BK_STM8
+LIBS:Thermo_CTRL_Unit-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATMEGA168PA-A IC?
+U 1 1 56E8F785
+P 3550 3100
+F 0 "IC?" H 2800 4350 50  0000 L BNN
+F 1 "ATMEGA168PA-A" H 3950 1700 50  0000 L BNN
+F 2 "TQFP32" H 3550 3100 50  0000 C CIN
+F 3 "" H 3550 3100 50  0000 C CNN
+	1    3550 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L MAX487 U?
+U 1 1 56E8FC52
+P 8900 2150
+F 0 "U?" H 8900 2450 60  0000 C CNN
+F 1 "MAX487" H 8925 1850 60  0000 C CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 8600 1800 60  0001 C CNN
+F 3 "" H 8900 2150 60  0000 C CNN
+	1    8900 2150
+	1    0    0    -1  
+$EndComp
+Text Label 8150 2300 0    60   ~ 0
+TxD
+$Comp
+L +5V #PWR?
+U 1 1 56E8FC6F
+P 9300 1800
+F 0 "#PWR?" H 9300 1650 50  0001 C CNN
+F 1 "+5V" H 9300 1940 50  0000 C CNN
+F 2 "" H 9300 1800 50  0000 C CNN
+F 3 "" H 9300 1800 50  0000 C CNN
+	1    9300 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E8FC81
+P 9300 2550
+F 0 "#PWR?" H 9300 2300 50  0001 C CNN
+F 1 "GND" H 9300 2400 50  0000 C CNN
+F 2 "" H 9300 2550 50  0000 C CNN
+F 3 "" H 9300 2550 50  0000 C CNN
+	1    9300 2550
+	1    0    0    -1  
+$EndComp
+Text Label 9350 2100 0    60   ~ 0
+485_B
+Text Label 9350 2200 0    60   ~ 0
+485_A
+Text Label 4650 2300 0    60   ~ 0
+MOSI
+Text Label 4650 2400 0    60   ~ 0
+MISO
+Text Label 4650 2500 0    60   ~ 0
+SCK
+Text Label 4650 2600 0    60   ~ 0
+OSC1
+Text Label 4650 2700 0    60   ~ 0
+OSC2
+$Comp
+L TL431 D?
+U 1 1 56E8FD9E
+P 10500 4950
+F 0 "D?" H 10600 5050 50  0000 C CNN
+F 1 "TL431" H 10500 4850 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 10550 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl431.pdf" H 10600 4650 50  0001 C CNN
+	1    10500 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E8FF31
+P 9600 5900
+F 0 "#PWR?" H 9600 5650 50  0001 C CNN
+F 1 "GND" H 9600 5750 50  0000 C CNN
+F 2 "" H 9600 5900 50  0000 C CNN
+F 3 "" H 9600 5900 50  0000 C CNN
+	1    9600 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_SMD_0805 R?
+U 1 1 56E8FF4F
+P 10500 4450
+F 0 "R?" H 10530 4470 50  0000 L CNN
+F 1 "1K" H 10530 4410 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 10550 4300 50  0001 C CNN
+F 3 "" H 10500 4450 50  0000 C CNN
+	1    10500 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 56E8FFA5
+P 10500 4150
+F 0 "#PWR?" H 10500 4000 50  0001 C CNN
+F 1 "+5V" H 10500 4290 50  0000 C CNN
+F 2 "" H 10500 4150 50  0000 C CNN
+F 3 "" H 10500 4150 50  0000 C CNN
+	1    10500 4150
+	1    0    0    -1  
+$EndComp
+Text Label 10050 4650 0    60   ~ 0
+2V5_Ref
+Text Label 8150 2100 0    60   ~ 0
+DE_O
+Text Label 8150 2000 0    60   ~ 0
+RxD
+Text Label 4700 3700 0    60   ~ 0
+TxD
+Text Label 4700 3600 0    60   ~ 0
+RxD
+Text Label 4600 2000 0    60   ~ 0
+Triac_1
+Text Label 4600 2100 0    60   ~ 0
+Triac_2
+Text Label 4600 2200 0    60   ~ 0
+Triac_3
+Text Label 4650 2850 0    60   ~ 0
+TH_1
+Text Label 4650 2950 0    60   ~ 0
+TH_2
+Text Label 4650 3050 0    60   ~ 0
+TH_3
+Text Label 4700 3800 0    60   ~ 0
+ZCD
+Text Label 4600 4000 0    60   ~ 0
+SW_W1
+Text Label 4600 4100 0    60   ~ 0
+SW_W2
+Text Label 4600 4200 0    60   ~ 0
+SW_W3
+Text Label 4600 4300 0    60   ~ 0
+SW_W4
+Text Label 4600 3150 0    60   ~ 0
+SW_SH1
+Text Label 4600 3250 0    60   ~ 0
+SW_SH2
+$Comp
+L +5V #PWR?
+U 1 1 56E90A17
+P 2650 1750
+F 0 "#PWR?" H 2650 1600 50  0001 C CNN
+F 1 "+5V" H 2650 1890 50  0000 C CNN
+F 2 "" H 2650 1750 50  0000 C CNN
+F 3 "" H 2650 1750 50  0000 C CNN
+	1    2650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X03 P?
+U 1 1 56E90A7B
+P 8950 5800
+F 0 "P?" H 8950 6000 50  0000 C CNN
+F 1 "ISCP" H 8950 5600 50  0000 C CNN
+F 2 "" H 8950 4600 50  0000 C CNN
+F 3 "" H 8950 4600 50  0000 C CNN
+	1    8950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 2200 8300 2200
+Wire Wire Line
+	8300 2200 8300 2100
+Connection ~ 8300 2100
+Wire Wire Line
+	9300 1800 9300 2000
+Wire Wire Line
+	9300 2300 9300 2550
+Wire Wire Line
+	9300 2100 9700 2100
+Wire Wire Line
+	9300 2200 9700 2200
+Wire Wire Line
+	4550 2300 4950 2300
+Wire Wire Line
+	4550 2400 4950 2400
+Wire Wire Line
+	4550 2500 4950 2500
+Wire Wire Line
+	4550 2600 4950 2600
+Wire Wire Line
+	4550 2700 4950 2700
+Wire Wire Line
+	10500 4150 10500 4350
+Wire Wire Line
+	10500 4550 10500 4750
+Wire Wire Line
+	10500 5150 10500 5250
+Wire Wire Line
+	10700 4650 10700 4950
+Wire Wire Line
+	10050 4650 10700 4650
+Connection ~ 10500 4650
+Wire Wire Line
+	8500 2300 8150 2300
+Wire Wire Line
+	8500 2100 8150 2100
+Wire Wire Line
+	4550 3600 4950 3600
+Wire Wire Line
+	4550 3700 4950 3700
+Wire Wire Line
+	8500 2000 8150 2000
+Wire Wire Line
+	4550 2000 4950 2000
+Wire Wire Line
+	4550 2100 4950 2100
+Wire Wire Line
+	4550 2200 4950 2200
+Wire Wire Line
+	4550 2850 4950 2850
+Wire Wire Line
+	4550 2950 4950 2950
+Wire Wire Line
+	4550 3050 4950 3050
+Wire Wire Line
+	4550 3800 4950 3800
+Wire Wire Line
+	4550 3150 4950 3150
+Wire Wire Line
+	4550 3250 4950 3250
+Wire Wire Line
+	4550 3350 4950 3350
+Wire Wire Line
+	4550 3450 4950 3450
+Wire Wire Line
+	4550 4200 4950 4200
+Wire Wire Line
+	4550 4300 4950 4300
+Wire Wire Line
+	2650 1750 2650 2100
+Connection ~ 2650 2000
+Wire Wire Line
+	8700 5700 8400 5700
+Wire Wire Line
+	8700 5800 8400 5800
+Wire Wire Line
+	8700 5900 8400 5900
+Wire Wire Line
+	9200 5700 9600 5700
+Wire Wire Line
+	9200 5800 9600 5800
+Wire Wire Line
+	9200 5900 9600 5900
+Text Label 8450 5700 0    60   ~ 0
+MISO
+Text Label 8450 5800 0    60   ~ 0
+SCK
+Wire Wire Line
+	4550 4100 4950 4100
+Wire Wire Line
+	4550 4000 4950 4000
+Text Label 4700 3450 0    60   ~ 0
+RST
+Text Label 8450 5900 0    60   ~ 0
+RST
+Text Label 9350 5800 0    60   ~ 0
+MOSI
+$Comp
+L +5V #PWR?
+U 1 1 56E90F4F
+P 9600 5700
+F 0 "#PWR?" H 9600 5550 50  0001 C CNN
+F 1 "+5V" H 9600 5840 50  0000 C CNN
+F 2 "" H 9600 5700 50  0000 C CNN
+F 3 "" H 9600 5700 50  0000 C CNN
+	1    9600 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56E91004
+P 10500 5250
+F 0 "#PWR?" H 10500 5000 50  0001 C CNN
+F 1 "GND" H 10500 5100 50  0000 C CNN
+F 2 "" H 10500 5250 50  0000 C CNN
+F 3 "" H 10500 5250 50  0000 C CNN
+	1    10500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Cer_SMD_0805 C?
+U 1 1 56E9101B
+P 10150 4900
+F 0 "C?" H 10160 4970 50  0000 L CNN
+F 1 "100n" H 10160 4820 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 10150 4750 50  0001 C CNN
+F 3 "" H 10150 4900 50  0000 C CNN
+	1    10150 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 5000 10150 5200
+Wire Wire Line
+	10150 5200 10500 5200
+Connection ~ 10500 5200
+Wire Wire Line
+	10150 4800 10150 4650
+Connection ~ 10150 4650
+$Comp
+L R_SMD_0805 R?
+U 1 1 56E91910
+P 9100 4350
+F 0 "R?" H 9130 4370 50  0000 L CNN
+F 1 "10k" H 9130 4310 50  0000 L CNN
+F 2 "Resistors_SMD:R_0805" H 9150 4200 50  0001 C CNN
+F 3 "" H 9100 4350 50  0000 C CNN
+	1    9100 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Cer_SMD_0805 C?
+U 1 1 56E91961
+P 9100 4850
+F 0 "C?" H 9110 4920 50  0000 L CNN
+F 1 "100n" H 9110 4770 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 9100 4700 50  0001 C CNN
+F 3 "" H 9100 4850 50  0000 C CNN
+	1    9100 4850
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
