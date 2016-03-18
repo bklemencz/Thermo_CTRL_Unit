@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name jst)(type Legacy)(uri "C:\\Users\\t9569bk\\Documents\\PCB_Libs\\Sharebrained Git\\jst.mod")(options "")(descr ""))
+  (lib (name kicad-jst-xh)(type KiCad)(uri C:\Users\t9569bk\Documents\PCB_Libs\kicad-jst-xh)(options "")(descr ""))
+)
