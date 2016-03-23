@@ -1,0 +1,26 @@
+Drill report for C:\Users\t9569bk\Documents\KiCad\Thermo_CTRL_Unit\Thermo_CTRL_Unit.kicad_pcb
+Created on 3/23/2016 2:13:15 PM
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'C:Thermo_CTRL_Unit.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (36 holes)
+    T2  0.90mm  0.035"  (6 holes)
+    T3  1.02mm  0.040"  (46 holes)
+    T4  1.30mm  0.051"  (3 holes)
+
+    Total plated holes count 91
+
+
+Drill file 'C:Thermo_CTRL_Unit-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  2.10mm  0.083"  (2 holes)
+
+    Total unplated holes count 2
